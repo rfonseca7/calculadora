@@ -42,6 +42,15 @@ class _HomePageState extends State<HomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
+                  ElevatedButton(onPressed: () {}, child: Text("CE")),
+                  ElevatedButton(onPressed: () {}, child: Text("C")),
+                  ElevatedButton(onPressed: () {}, child: Text("SQRT")),
+                  ElevatedButton(onPressed: () {}, child: Text("^"))
+                ],
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
                   ElevatedButton(onPressed: () {}, child: Text("7")),
                   ElevatedButton(onPressed: () {}, child: Text("8")),
                   ElevatedButton(onPressed: () {}, child: Text("9")),
@@ -79,7 +88,7 @@ class _HomePageState extends State<HomePage> {
                   ElevatedButton(
                       onPressed: () {
                         setState(() {
-                          operaciones = "";
+                          operaciones = ".";
                         });
                       },
                       child: Text("C")),
